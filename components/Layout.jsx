@@ -17,7 +17,7 @@ const Layout = ({ children, title }) => {
           <Sidebar />
         </div>
 
-        <div className="basis-[55%]  bg-gray-100">
+        <div className="basis-[55%] overflow-y-scroll  bg-gray-100">
           <Navbar />
           <div className="">{children}</div>
         </div>
