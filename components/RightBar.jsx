@@ -27,7 +27,7 @@ const RightBar = () => {
         <div className=" bg-white shadow-sm border-[1px] flex items-center w-full gap-3 p-2 rounded-lg border-gray-400">
           <BiSearchAlt />
           <input
-            type="text"
+            type="search"
             placeholder="Search friends"
             className="outline-none border-none bg-transparent w-full"
           />
@@ -42,9 +42,9 @@ const RightBar = () => {
             modules={[FreeMode]}
             className="mt-4"
           >
-            {[1, 2, 3, 4, 5].map((item) => (
+            {[1, 2, 3, 4, 5].map((item, index) => (
               <SwiperSlide
-                // key={artist?.key}
+                key={index}
                 style={{ width: "25%", height: "auto" }}
                 className=" rounded-full animate-slideright"
               >
@@ -68,8 +68,8 @@ const RightBar = () => {
               <MdMoreHoriz className="text-xl cursor-pointer " />
             </div>
             <div className="flex flex-col mt-3 gap-3">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 52].map((item) => (
-                <div className="flex justify-between items-center">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 52].map((item, index) => (
+                <div className="flex justify-between items-center" key={index}>
                   <div className="flex items-center gap-2 ">
                     <img
                       src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?cs=srgb&dl=pexels-philippe-donn-1133957.jpg&fm=jpg"

@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className=" bg-white shadow-sm border-[1px] flex items-center w-[300px] gap-3 p-2 rounded-lg border-gray-400">
           <BiSearchAlt />
           <input
-            type="text"
+            type="search"
             placeholder="Search for something here"
             className="outline-none border-none bg-transparent w-full"
           />
