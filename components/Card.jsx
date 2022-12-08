@@ -5,14 +5,18 @@ import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
 import { FaRegComment } from "react-icons/fa";
 import { RiSendPlaneFill } from "react-icons/ri";
 
-const Card = () => {
+const Card = ({ type }) => {
   const [isLike, setIsLike] = useState(false);
 
   const clickLike = () => {
     setIsLike((prev) => !prev);
   };
   return (
-    <div className="w-[70%] bg-white shadow-sm  rounded-lg ">
+    <div
+      className={`${
+        type === "explore" ? "w-auto" : "w-[80%]"
+      } bg-white shadow-sm  rounded-lg `}
+    >
       <div className="px-3 flex justify-between items-center py-3 w-full  ">
         <div className="flex gap-1 items-center cursor-pointer">
           <img
@@ -30,7 +34,7 @@ const Card = () => {
         <MdMoreHoriz className="text-xl cursor-pointer" />
       </div>
       <img
-        className="w-full h-[300px] object-fill"
+        className="w-full h-100% object-fill"
         alt="images"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUDdTpf8NQuBtdrBgSKRtn7chovffMKPtiA&usqp=CAU"
       />

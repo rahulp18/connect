@@ -68,7 +68,7 @@ const RightBar = () => {
               <MdMoreHoriz className="text-xl cursor-pointer " />
             </div>
             <div className="flex flex-col mt-3 gap-3">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 52].map((item, index) => (
+              {[1, 2, 3, 4].map((item, index) => (
                 <div className="flex justify-between items-center" key={index}>
                   <div className="flex items-center gap-2 ">
                     <img

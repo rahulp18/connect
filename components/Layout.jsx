@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Head from "next/head";
 import Sidebar from "./Sidebar";
 import RightBar from "./RightBar";
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, rightBar }) => {
   return (
     <>
       <Head>
@@ -17,13 +17,19 @@ const Layout = ({ children, title }) => {
           <Sidebar />
         </div>
 
-        <div className="basis-[55%] overflow-y-scroll  bg-gray-100">
+        <div
+          className={`${
+            rightBar === false ? "basis-[80%]" : "basis-[55%]"
+          }  overflow-y-scroll  bg-gray-100`}
+        >
           <Navbar />
           <div className="">{children}</div>
         </div>
-        <div className="basis-[25%]  ">
-          <RightBar />
-        </div>
+        {rightBar === true && (
+          <div className="basis-[25%]  ">
+            <RightBar />
+          </div>
+        )}
       </div>
     </>
   );

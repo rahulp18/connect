@@ -11,7 +11,7 @@ const Community = () => {
   const activeClass = "bg-blue-600 text-white";
   const inActiveClass = "bg-white text-gray-600";
   return (
-    <Layout title="Community (Connect)">
+    <Layout title="Community (Connect)" rightBar={true}>
       <div className="px-9 py-5">
         <div className="flex j gap-2 flex-wrap items-center justify-evenly bg-white py-3 rounded-lg">
           <div
