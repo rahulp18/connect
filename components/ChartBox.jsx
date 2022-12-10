@@ -3,6 +3,8 @@ import { MdAddCall } from "react-icons/md";
 import { FiVideo } from "react-icons/fi";
 import { BsInfoCircle } from "react-icons/bs";
 import { TfiMoreAlt } from "react-icons/tfi";
+import { TbSend } from "react-icons/tb";
+
 const ChartBox = () => {
   const messages = [
     {
@@ -25,7 +27,7 @@ const ChartBox = () => {
     },
     {
       user: false,
-      message: "Son't Worry i will help you to improve your skills",
+      message: "Don't Worry i will help you to improve your skills",
     },
   ];
 
@@ -88,6 +90,20 @@ const ChartBox = () => {
               <TfiMoreAlt className="text-sm text-gray-600 cursor-pointer" />
             </div>
           ))}
+        </div>
+        <div className="mt-8 p-6">
+          <div className="form-control w-full">
+            <div className="input-group">
+              <input
+                type="text"
+                placeholder="Type your messages"
+                className="input input-bordered w-full"
+              />
+              <button className="btn btn-square">
+                <TbSend className="text-xl" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

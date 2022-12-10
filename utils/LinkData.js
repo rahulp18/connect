@@ -1,6 +1,7 @@
 import { CgFeed } from "react-icons/cg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
+import { FaRegUserCircle } from "react-icons/fa";
 import {
   MdOutlineNotificationsNone,
   MdExplore,
@@ -27,9 +28,9 @@ export const navigatations = [
   },
   {
     id: 4,
-    name: "Notifications",
-    link: "notifications",
-    icon: <MdOutlineNotificationsNone />,
+    name: "Profile",
+    link: "profile",
+    icon: <FaRegUserCircle />,
   },
   {
     id: 5,

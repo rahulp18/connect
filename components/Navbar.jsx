@@ -3,7 +3,7 @@ import { BiSearchAlt } from "react-icons/bi";
 
 const Navbar = () => {
   return (
-    <div className="bg-white px-3 py-2 sticky top-0 ">
+    <div className="bg-white px-3 py-2 sticky top-0 z-10">
       <div className="flex justify-between items-center">
         <div className=" bg-white shadow-sm border-[1px] flex items-center w-[300px] gap-3 p-2 rounded-lg border-gray-400">
           <BiSearchAlt />
