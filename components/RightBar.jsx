@@ -42,7 +42,7 @@ const RightBar = () => {
             modules={[FreeMode]}
             className="mt-4"
           >
-            {[1, 2, 3, 4, 5].map((item, index) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, index) => (
               <SwiperSlide
                 key={index}
                 style={{ width: "25%", height: "auto" }}

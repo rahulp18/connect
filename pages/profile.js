@@ -80,9 +80,11 @@ const Profile = () => {
           </div>
         </div>
         <div className="text px-4 tect-md mt-5">
-          <p className="text-xl font-semibold">Previous Post</p>
+          <p className="text-xl font-semibold my-5 text-center">
+            See your All posts
+          </p>
           <div className="flex gap-3 items-center justify-center flex-wrap">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, i) => (
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item, i) => (
               <NewCard key={i} />
             ))}
           </div>

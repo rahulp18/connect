@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { MdMoreHoriz } from "react-icons/md";
 import { IoIosShareAlt } from "react-icons/io";
 import { IoHeartOutline, IoHeartSharp } from "react-icons/io5";
-import { FaRegComment } from "react-icons/fa";
+import { FaRegComment, FaTrashAlt } from "react-icons/fa";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { FiEdit } from "react-icons/fi";
 
 const Card = ({ type }) => {
   const [isLike, setIsLike] = useState(false);
@@ -31,7 +32,26 @@ const Card = ({ type }) => {
             <p className="text-sm text-gray-400">12h ago</p>
           </div>
         </div>
-        <MdMoreHoriz className="text-xl cursor-pointer" />
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0}>
+            <MdMoreHoriz className="text-xl cursor-pointer" />
+          </label>
+          <ul
+            tabIndex={0}
+            className="dropdown-content bg-gray-50  shadow px-3 py-6  rounded-xl gap-3   flex items-center w-auto"
+          >
+            <li className="cursor-pointer">
+              <a>
+                <FiEdit />
+              </a>
+            </li>
+            <li className="cursor-pointer">
+              <a>
+                <FaTrashAlt />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <img
         className="w-full h-100% object-fill"

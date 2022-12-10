@@ -28,7 +28,7 @@ const AddPost = () => {
           <BsEmojiSmile className="text-xl" />
           <p className="">Feelings</p>
         </div>
-        <button className="btn btn-outline btn-gray-600 btn-md">Send</button>
+        <button className="btn btn-outline btn-gray-600 btn-md">POST</button>
       </div>
     </div>
   );

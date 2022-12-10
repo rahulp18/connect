@@ -1,12 +1,10 @@
 import { CgFeed } from "react-icons/cg";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
-import { FaRegUserCircle } from "react-icons/fa";
-import {
-  MdOutlineNotificationsNone,
-  MdExplore,
-  MdOutlineSettings,
-} from "react-icons/md";
+
+import { FaRegUserCircle, FaRegUser } from "react-icons/fa";
+
+import { MdSecurity, MdExplore, MdOutlineSettings } from "react-icons/md";
 export const navigatations = [
   {
     id: 1,
@@ -43,5 +41,18 @@ export const navigatations = [
     name: "Settings",
     link: "settings",
     icon: <MdOutlineSettings />,
+  },
+];
+
+export const settingsLink = [
+  {
+    id: 1,
+    name: "Edit Profile",
+    icon: <FaRegUser />,
+  },
+  {
+    id: 2,
+    name: "Password & Security",
+    icon: <MdSecurity />,
   },
 ];
