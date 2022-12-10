@@ -3,7 +3,7 @@ import { MdEdit } from "react-icons/md";
 import { BsCalendar2Date } from "react-icons/bs";
 import { IoSchoolOutline } from "react-icons/io5";
 import { FiEdit } from "react-icons/fi";
-import { Layout } from "../components";
+import { AddPost, Card, Layout, NewCard } from "../components";
 import { FaCity, FaGithub, FaRegBuilding } from "react-icons/fa";
 
 const Profile = () => {
@@ -40,7 +40,7 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row my-24 gap-2 py-3 mx-4 items-start">
+        <div className="flex flex-row mt-24 gap-2 py-3 mx-4 items-start">
           <div className="basis-1/3 bg-white shadow-sm px-4 py-2">
             <h1 className="text-md capitalize text-gray-600 font-Roboto font-semibold ">
               INTRO
@@ -66,14 +66,26 @@ const Profile = () => {
               </div>
               <div className="flex gap-2 items-center">
                 <FaRegBuilding />
-                <p>Qurinom Solutions</p>
+                <p>Workikng at Qurinom Solutions</p>
               </div>
               <button className="btn btn-outline btn-sm flex gap-3 mt-5">
                 Edit <FiEdit />{" "}
               </button>
             </div>
           </div>
-          <div className="basis-2/3 bg-white shadow-sm">Poat</div>
+          <div className="basis-2/3 px-4 py-2">
+            <div className="flex gap-4 items-center justify-center flex-col">
+              <AddPost />
+            </div>
+          </div>
+        </div>
+        <div className="text px-4 tect-md mt-5">
+          <p className="text-xl font-semibold">Previous Post</p>
+          <div className="flex gap-3 items-center justify-center flex-wrap">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item, i) => (
+              <NewCard key={i} />
+            ))}
+          </div>
         </div>
       </div>
     </Layout>

@@ -14,7 +14,7 @@ const Card = ({ type }) => {
   return (
     <div
       className={`${
-        type === "explore" ? "w-auto" : "w-[80%]"
+        type === "explore" ? "w-[500px]" : "w-[80%]"
       } bg-white shadow-sm  rounded-lg `}
     >
       <div className="px-3 flex justify-between items-center py-3 w-full  ">
@@ -36,7 +36,7 @@ const Card = ({ type }) => {
       <img
         className="w-full h-100% object-fill"
         alt="images"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJUDdTpf8NQuBtdrBgSKRtn7chovffMKPtiA&usqp=CAU"
+        src="https://wallpapercave.com/wp/wp4521638.jpg"
       />
       <div className="flex justify-between items-center p-3">
         <div className="flex gap-1 items-center">
