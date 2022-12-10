@@ -1,6 +1,7 @@
 import { AddPost, Card, Layout } from "../components";
 
 export default function Home() {
+  console.log(`${process.env.NEXT_PUBLIC_MONGO_URI}`);
   return (
     <Layout title="Home (Connect)" rightBar={true}>
       <div className="px-9 py-5 my-5 ">
