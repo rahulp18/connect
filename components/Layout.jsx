@@ -13,23 +13,25 @@ const Layout = ({ children, title, rightBar }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="h-screen flex py-2">
-        <div className="basis-[20%]  bg-red-600">
+        <div className="basis-[20%] ">
           <Sidebar />
         </div>
 
-        <div
-          className={`${
-            rightBar === false ? "basis-[80%]" : "basis-[55%]"
-          }  overflow-y-scroll  bg-gray-100`}
-        >
+        <div className="basis-[80%] overflow-y-scroll  bg-gray-100">
           <Navbar />
-          <div className="">{children}</div>
-        </div>
-        {rightBar === true && (
-          <div className="basis-[25%]  ">
-            <RightBar />
+          <div className="flex flex-row">
+            <div className={`${rightBar ? "basis-2/3" : "basis-3/3"}`}>
+              {children}
+            </div>
+            <div
+              className={`${
+                rightBar ? "basis-1/3" : "basis-0"
+              } mx-3 my-2 relative`}
+            >
+              {rightBar && <RightBar />}
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </>
   );

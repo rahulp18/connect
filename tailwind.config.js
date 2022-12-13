@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       Popins: ["Poppins", "sans-serif"],
       Roboto: ["Roboto", "sans-serif"],
+      Rubik: ["Rubik Mono One", "sans-serif"],
     },
   },
   daisyui: {

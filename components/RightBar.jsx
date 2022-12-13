@@ -11,20 +11,9 @@ import { FreeMode } from "swiper";
 const RightBar = () => {
   const router = useRouter();
   return (
-    <div className="px-5">
-      <div className="flex items-center justify-end gap-2 ">
-        <h1 className="font-Roboto text-md font-semibold text-gray-500">
-          Rahul Pradhan
-        </h1>
-        <img
-          src="https://i.pinimg.com/736x/0c/2d/04/0c2d04858d359c0f189f44e05725f373.jpg"
-          alt="peofilepic"
-          className="h-12 w-12 rounded-xl shadow-lg cursor-pointer "
-          onClick={() => router.push("/profile")}
-        />
-      </div>
+    <div className="p-3 rounded-sm bg-white shadow-sm sticky top-10">
       <div className="mt-8 px-3 py-2">
-        <div className=" bg-white shadow-sm border-[1px] flex items-center w-full gap-3 p-2 rounded-lg border-gray-400">
+        <div className=" shadow-sm border-[1px] flex items-center w-full gap-3 p-2 rounded-lg border-gray-400">
           <BiSearchAlt />
           <input
             type="search"
