@@ -4,7 +4,7 @@ import bcrypt from "bcrypt";
 import { createAccessToken, createRefreshToken } from "../../../lib/token";
 import { serialize } from "cookie";
 
-export default async function (req, res) {
+export default async function handler(req, res) {
   const { method } = req;
   db.connect();
   if (method === "POST") {
