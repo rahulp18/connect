@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import welcome from "../assets/welcome.json";
-import { LogIn } from "../components";
+import { useRouter } from "next/router";
 const JoinUs = () => {
-  const [isLogin, setIsLogin] = useState(false);
-
-  const handleClick = () => {
-    setIsLogin((prev) => !prev);
-  };
+  const router = useRouter();
   return (
     <div className="bg-white h-screen px-5 py-6">
       <div className="flex items-center justify-between">
@@ -30,13 +26,13 @@ const JoinUs = () => {
           </p>
           <div className="flex items-center justify-end mt-5 gap-4 self-end">
             <button
-              onClick={handleClick}
+              onClick={() => router.push("/login")}
               className="text-xl px-5 py-3 border-[1px] border-black text-black rounded-lg"
             >
               Login
             </button>
             <button
-              onClick={handleClick}
+              onClick={() => router.push("/register")}
               className="px-4 text-xl py-3 border-[1px] border-black bg-black text-white rounded-lg"
             >
               Register
