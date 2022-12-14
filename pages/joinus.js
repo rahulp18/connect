@@ -7,7 +7,9 @@ const JoinUs = () => {
   return (
     <div className="bg-white h-screen px-5 py-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-sky-600 text-xl font-bold font-Roboto ">Connect</h1>
+        <h1 className="text-sky-600 text-2xl font-bold font-Roboto ">
+          Connect
+        </h1>
         <p className="text-lg text-black ">
           Developed By{" "}
           <span className="text-sky-600 font-bold ">Rahul Pradhan</span>
@@ -19,7 +21,7 @@ const JoinUs = () => {
         </div>
         <div className="basis-[40%] ">
           <h1 className="text-[8rem] leading-tight tracking-wider text-end font-normal font-Rubik">
-            welcome
+            Welcome
           </h1>
           <p className="text-3xl text-end leading-9 text-gray-600 my-4 font-normal font-roboto">
             Let's Connect With Alumni

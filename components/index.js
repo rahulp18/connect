@@ -5,5 +5,3 @@ export { default as UserRow } from "./UserRow";
 export { default as ChartBox } from "./ChartBox";
 export { default as AddPost } from "./AddPost";
 export { default as NewCard } from "./NewCard";
-export { default as LogIn } from "./LogIn";
-export { default as Register } from "./Register";
